@@ -1,0 +1,7 @@
+.git
+.gitignore
+backend/build/
+backend/config/admin.conf
+backend/config/render-admin.conf
+data/
+*.db
