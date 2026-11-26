@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clubs | UNISPHERE</title>
+<meta name="description" content="Browse all 39 clubs of MITS-DU.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="clubs">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+<div class="pagehead"><div class="wrap"><h1>Clubs</h1><p class="muted" style="margin:0">Every club of MITS-DU in one directory. <span id="club-count"></span></p></div></div>
+<div class="wrap"><div class="toolbar">
+ <input type="search" id="c-q" placeholder="Search by name, Instagram handle or topic" aria-label="Search clubs">
+ <select id="c-cat" aria-label="Category"></select>
+ <select id="c-rec" aria-label="Recruitment status"><option value="">Any recruitment status</option><option value="open">Recruiting now</option><option value="closed">Recruitment closed</option><option value="To be announced">To be announced</option></select>
+ <button class="btn btn-sm" id="c-clear" type="button">Clear</button></div>
+ <div class="grid" id="club-grid"></div></div>
+</main>
+<footer id="site-footer"></footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">UNISPHERE needs JavaScript to load clubs and events.</p></noscript>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/public.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Dashboard | UNISPHERE</title>
+<meta name="description" content="UNISPHERE: clubs, events, calendar and notices for MITS-DU, Gwalior.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="student">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<div class="pagehead"><div class="wrap"><h1 id="welcome">Welcome!</h1><p class="muted" style="margin:0">Your clubs, events and notices.</p></div></div>
+<div class="wrap">
+<div class="stats"><div class="stat"><b id="st-count">0</b><span class="muted">Upcoming registrations</span></div>
+<a class="stat" href="calendar.html" style="text-decoration:none"><b>📅</b><span class="muted">Open calendar</span></a>
+<a class="stat" href="events.html?upcoming=1" style="text-decoration:none"><b>🎟️</b><span class="muted">Find events</span></a>
+<a class="stat" href="clubs.html" style="text-decoration:none"><b>🏛️</b><span class="muted">Browse clubs</span></a></div>
+<h2>My registered events</h2><div id="my-events"></div>
+<h2 style="margin-top:48px">Upcoming events</h2><div id="up-events"></div>
+<h2 style="margin-top:48px">Recommended clubs</h2><p class="muted" id="rec-note"></p><div class="grid" id="rec-clubs"></div>
+<div class="two" style="margin-top:48px"><div><h2>Recent notices</h2><div id="notes"></div></div><div><h2>Profile</h2><div class="card" style="padding:20px" id="profile"></div></div></div></div>
+</main>
+<footer id="site-footer"></footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">UNISPHERE needs JavaScript to load clubs and events.</p></noscript>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/account.js"></script>
+</body>
+</html>

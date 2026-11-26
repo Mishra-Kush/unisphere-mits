@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events | UNISPHERE</title>
+<meta name="description" content="UNISPHERE: clubs, events, calendar and notices for MITS-DU, Gwalior.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="events">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+<div class="pagehead"><div class="wrap"><h1>Events</h1><p class="muted" style="margin:0">Workshops, fests, competitions and more from every club.</p></div></div>
+<div class="wrap"><div class="toolbar">
+ <input type="search" id="e-q" placeholder="Search events, venues, clubs" aria-label="Search events">
+ <select id="e-cat" aria-label="Club category"></select><select id="e-club" aria-label="Organising club"></select>
+ <input type="date" id="e-from" aria-label="From date">
+ <select id="e-sort" aria-label="Sort"><option value="upcoming">Upcoming date</option><option value="recent">Recently published</option></select>
+ <label style="display:flex;align-items:center;gap:6px"><input type="checkbox" id="e-up"> Upcoming only</label>
+ <div class="seg push" role="group" aria-label="View"><button data-view="list" aria-pressed="true">List</button><button data-view="cards" aria-pressed="false">Cards</button></div></div>
+ <div id="ev-list" class="events"></div>
+ <p style="text-align:center;margin-top:24px"><button class="btn" id="more" hidden>Load more events</button></p></div>
+</main>
+<footer id="site-footer"></footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">UNISPHERE needs JavaScript to load clubs and events.</p></noscript>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/public.js"></script>
+</body>
+</html>

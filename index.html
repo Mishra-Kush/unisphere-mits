@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discover Your Campus | UNISPHERE</title>
+<meta name="description" content="UNISPHERE: clubs, events, calendar and notices for MITS-DU, Gwalior.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-h">
+ <div class="hero-inner">
+  <h1 id="hero-h">Discover Your Campus</h1>
+  <p class="lead">Explore clubs, discover exciting events, develop new skills, and become part of your campus community.</p>
+  <div class="cta"><a class="btn btn-pink" href="events.html">Explore Events</a><a class="btn" href="clubs.html">Discover Clubs</a></div>
+  <div id="featured"></div>
+  <div class="searchbox">
+   <form id="search-form" class="searchrow" role="search">
+    <label class="sr" for="q">Search clubs and events</label>
+    <input id="q" type="search" placeholder="Search clubs, Instagram handles, events, keywords" autocomplete="off" aria-controls="suggest">
+    <label class="sr" for="search-cat">Category</label><select id="search-cat"></select>
+    <button class="btn btn-pink" type="submit">Search</button>
+   </form>
+   <div id="suggest" class="suggest" hidden></div>
+  </div>
+ </div>
+</section>
+<div class="rule"></div>
+<section id="results" hidden aria-live="polite"></section>
+<section class="block"><div class="wrap">
+ <div class="head"><h2>Browse by category</h2><div id="cat-status" aria-live="polite"></div></div>
+ <div class="cats" id="cat-grid"></div>
+</div></section>
+<section class="block" id="events-sec" style="padding-top:0"><div class="wrap">
+ <div class="head"><h2>Upcoming events</h2><a class="btn btn-sm" href="events.html">View all events</a></div>
+ <div class="toolbar">
+  <select id="f-cat" aria-label="Filter by category"></select>
+  <select id="f-club" aria-label="Filter by organising club"></select>
+  <input type="date" id="f-from" aria-label="Events from this date">
+  <select id="f-sort" aria-label="Sort events"><option value="upcoming">Sort: upcoming date</option><option value="recent">Sort: recently published</option></select>
+ </div>
+ <div id="home-events"></div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+ <div class="head"><h2>Featured clubs</h2><a class="btn btn-pink btn-sm" id="all-clubs-link" href="clubs.html">View All Clubs</a></div>
+ <div class="grid" id="home-clubs"></div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+ <div class="head"><h2>Notice board</h2><a class="btn btn-sm" href="notices.html">All notices</a></div>
+ <div id="home-notices"></div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+ <div class="head"><h2>Calendar</h2><a class="btn btn-sm" href="calendar.html">Open full calendar</a></div>
+ <div class="cal"><div class="calbox" id="cal"></div><div id="cal-list"></div></div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">UNISPHERE needs JavaScript to load clubs and events.</p></noscript>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/public.js"></script>
+</body>
+</html>

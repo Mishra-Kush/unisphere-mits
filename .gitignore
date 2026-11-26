@@ -1,0 +1,4 @@
+config/admin.conf
+data/
+backend/build/
+*.db

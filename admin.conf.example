@@ -1,0 +1,5 @@
+# Private configuration. NEVER put this file in the public web folder or share it.
+ADMIN_EMAIL=you@example.com
+ADMIN_PASSWORD=choose-a-long-password-here
+# Optional paths (relative to the backend folder):
+# DB_PATH=../data/unisphere.db

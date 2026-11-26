@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Registration | UNISPHERE</title>
+<meta name="description" content="UNISPHERE: clubs, events, calendar and notices for MITS-DU, Gwalior.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="register">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<div class="wrap"><form class="formcard" id="reg-form" novalidate style="max-width:560px">
+<h1 style="font-size:1.8rem">Create student account</h1><p class="muted">Only college emails ending in @mitsgwl.ac.in are accepted. We check the domain but do not verify that you own the mailbox yet.</p>
+<div id="form-alert" class="alert err" role="alert" tabindex="-1" hidden></div>
+<div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required><span class="err" id="name-err"></span></div>
+<div class="field"><label for="email">College email</label><input id="email" type="email" autocomplete="username" required placeholder="name@mitsgwl.ac.in"><span class="err" id="email-err"></span></div>
+<div class="field"><label for="enroll">Enrollment number <small>(optional)</small></label><input id="enroll" autocomplete="off" placeholder="e.g. BTCS26O1070"></div>
+<div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="new-password" required><small>At least 8 characters, with a letter and a number.</small><span class="err" id="password-err"></span></div>
+<div class="field"><label for="confirm">Confirm password</label><input id="confirm" type="password" autocomplete="new-password" required><span class="err" id="confirm-err"></span></div>
+<button class="btn btn-pink" id="submit" type="submit" style="width:100%">Register</button>
+<p style="margin:18px 0 0" class="muted">Already registered? <a href="login.html">Log in</a></p></form></div>
+</main>
+<footer id="site-footer"></footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px;text-align:center">UNISPHERE needs JavaScript to load clubs and events.</p></noscript>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/account.js"></script>
+</body>
+</html>
